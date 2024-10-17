@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive dropdown navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <!----logo---->
+        <div class="logo">
+            <img src="logo.png" alt="Logo" />
+        </div>
+        <!---seachbar---->
+            <div class="search-bar">
+                <input type="text" placeholder="Søg her...">
+            </div>
+<!---navigationsbar---->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pages +</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Services +</a>
+                            <ul>
+                                <!-- DET HER ER EN HTML -->
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Gallery +</a>
+                    <ul>
+                        <li><a href="#">Grid gallery</a></li>
+                        <li><a href="#">Flex gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+    
+   
+    </style>
+</head>
+<body>

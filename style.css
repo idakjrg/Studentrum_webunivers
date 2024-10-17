@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/**********************
+**********************
+***** NAVIGATION *******
+**********************
+**********************/
+/* Navigation styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #aa8f8f;
+}
+
+/* Logo styling */
+.navbar .logo img {
+    height: 150px; /* Adjust height as needed */
+}
+
+/* Navbar links styling */
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #ccc; /* Hover effect */
+}
+
+/* Search bar styling */
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* For responsive menu (hamburger) */
+#menu-bar {
+    display: none;
+}
+
+label[for="menu-bar"] {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+    }
+
+    #menu-bar:checked + label + .navbar ul {
+        display: flex;
+    }
+
+    label[for="menu-bar"] {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+
+/**********************
+**********************
+*****FORSIDEN*********
+**********************
+**********************/
+
+/* Centrerer overskrifterne på forsiden*/
+h1, h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+#p_forside{
+    text-align: center;
+    line-height: 40px;
+}
+.p_artikler{
+    text-align: left;
+}
+
+/* Sikring af plads under navigationen */
+.content {
+    margin-top: 10px; /* Juster efter behov */
+    padding: 40px;
+}
+
+
+
+ /* Styling for container der indeholder boxene */
+ .container {
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around; /* Placer bokse med plads imellem */
+    margin-top: 0px;
+    padding-bottom: 70px;
+}
+
+/* Styling for hver boks med artikler */
+.box {
+    width: 30%; /* Hver boks tager 30% af bredden */
+    text-align: center;
+    border: 1px solid #aa8f8f; /* Valgfri kant */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+/* Billedet i hver boks til artikler */
+.box img {
+    width: 100%; /* Billedet fylder hele boksens bredde */
+    height: auto; /* Bibehold forholdet */
+}
+
+/* Teksten under billedet i boxene */
+.box p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Læs mere knap i box */
+.forside_button{
+    color: brown;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+/**********************
+**********************
+***** FOOTER *********
+**********************
+**********************/
+
+footer {
+    background-color:#aa8f8f;
+    color: #fff;
+    padding: 40px 0;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info h3, .footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-info p, .footer-bottom {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+/**********************
+**********************
+***** ARTIKEL 1*********
+**********************
+**********************/
+
+/* Flexbox container styling for artikel 1 */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Sørger for, at indholdet fordeles med plads imellem */
+    align-items: center; /* Centrerer indholdet lodret */
+    padding: 50px;
+    
+}
+
+/* Tekstområdet */
+.flex-container .text {
+    flex: 1; /* Gør, at tekstdelen fylder det meste af pladsen */
+    padding: 20px; /* Lidt afstand mellem tekst og billede */
+    line-height: 40px;
+}
+
+/* Billedområdet */
+.flex-container .image img {
+    max-width: 100%; /* Sørger for, at billedet ikke bliver større end sin container */
+    height: auto; /* Bevarer billedets proportioner */
+    max-height: 300px; /* Angiver en maks. højde for billedet */
+}
+
+/**********************
+**********************
+***** ARTIKEL 2*******
+**********************
+**********************/
+
+#h1_artikel2{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+#img_fomo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%; /* Juster billedets størrelse efter behov */
+    padding: 20px;
+}
+#p_artikel2{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+    line-height: 40px;
+    margin: 30px;
+}
